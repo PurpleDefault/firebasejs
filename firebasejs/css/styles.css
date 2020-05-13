@@ -8,3 +8,57 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: #51575B;
 }
+
+/* NAV STYLES */
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.firebase_nav {
+	text-align: center;
+	padding-top: 0.75rem;
+	padding-left: 1.2rem;
+}
+
+#title {
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+#stars {
+	display: inline-block;
+	font-size: 0.7rem;
+	color: #8A9195;
+}
+
+#star {
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	background: url(../images/svg/star-solid.svg) no-repeat center;
+}
+
+.logo {
+	padding-top: 0.5rem;
+}
+
+.logo img {
+	height: 4em;
+}
+
+.button {
+	padding-top: 0.9rem;
+	padding-right: 0.9rem;
+}
+
+.download_btn {
+	all: unset;
+	font-size: 0.85rem;
+	background-color: #3DAFBE;
+	border-radius: 0.25rem;
+	padding: 0.5rem 0.8rem;
+	color: #FFFFFF;
+}
