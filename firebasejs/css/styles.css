@@ -17,6 +17,10 @@ body {
 	display: none;
 }
 
+button {
+	all: unset;
+}
+
 /* NAV STYLES */
 
 nav {
@@ -120,6 +124,16 @@ main h1 {
 
 main h1 span {
 	font-weight: 500;
+}
+
+main button {
+	display: block;
+	color: #4A463F;
+	background-color: #FFCA99;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: auto;
+	cursor: pointer;
 }
 
 #fire {
