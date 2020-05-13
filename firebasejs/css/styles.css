@@ -9,10 +9,13 @@ body {
 	color: #51575B;
 }
 
+.flex {
+	display: flex;
+}
+
 /* NAV STYLES */
 
 nav {
-	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -61,4 +64,98 @@ nav {
 	border-radius: 0.25rem;
 	padding: 0.5rem 0.8rem;
 	color: #FFFFFF;
+}
+
+/* HEADER STYLES */
+
+header {
+	padding-top: 2.5rem;
+	width: 80%;
+	margin: auto;
+}
+
+header h1 {
+	font-size: 3.5rem;
+	text-shadow: 2px 3px 4px rgba(150, 150, 150, 1);
+}
+
+header p {
+	font-size: 1.2rem;
+	padding-top: 1.25rem;
+}
+
+header .download_btn {
+	margin-top: 2rem;
+	font-size: 1rem;
+}
+
+/* MAIN STYLES */
+
+main {
+	margin-top: 4rem;
+	background-color: #4A463F;
+	border-top: 0.25rem solid #FFCA99;
+	border-bottom: 0.25rem solid #FFCA99;
+	padding-bottom: 3rem;
+}
+
+main h1 {
+	font-size: 1.25rem;
+	color: #FFFFFF;
+	font-weight: 200;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 2.5rem;
+	padding-bottom: 1rem;
+}
+
+main h1 span {
+	font-weight: 500;
+}
+
+#fire {
+	color: #FFCA99;
+}
+
+.items {
+	width: 80%;
+	margin: auto;
+	flex-direction: column;
+}
+
+.features {
+	color: #FFFFFF;
+	padding-top: 2rem;
+	font-weight: 200;
+}
+
+.features p {
+	padding-top: 1rem;
+	line-height: 1.5;
+}
+
+.features h2 {
+	color: #FFCA99;
+	font-weight: 400;
+}
+
+.features img {
+	display: block;
+	height: 5rem;
+	width: 5rem;
+	margin: auto;
+	margin-bottom: 1.25rem;
+}
+
+/* FOOTER STYLES */
+
+footer {
+	padding: 2rem;
+	text-align: center;
+}
+
+footer img {
+	display: inline;
+	height: 5rem;
+	padding: 0.75rem;
 }
