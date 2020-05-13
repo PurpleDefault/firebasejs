@@ -13,6 +13,10 @@ body {
 	display: flex;
 }
 
+.hide {
+	display: none;
+}
+
 /* NAV STYLES */
 
 nav {
@@ -59,7 +63,7 @@ nav {
 
 .download_btn {
 	all: unset;
-	font-size: 0.85rem;
+	font-size: 1rem;
 	background-color: #3DAFBE;
 	border-radius: 0.25rem;
 	padding: 0.5rem 0.8rem;
@@ -82,11 +86,14 @@ header h1 {
 header p {
 	font-size: 1.2rem;
 	padding-top: 1.25rem;
+	line-height: 1.5;
 }
 
 header .download_btn {
 	margin-top: 2rem;
-	font-size: 1rem;
+	border-radius: 0.75rem;
+	padding: 1.25rem 2.75rem;
+	font-size: 1.5rem;
 }
 
 /* MAIN STYLES */
@@ -100,13 +107,15 @@ main {
 }
 
 main h1 {
-	font-size: 1.25rem;
+	font-size: 2.25rem;
+	width: 50%;
 	color: #FFFFFF;
-	font-weight: 200;
 	text-align: center;
+	font-weight: 200;
 	text-transform: uppercase;
 	padding-top: 2.5rem;
 	padding-bottom: 1rem;
+	margin: auto;
 }
 
 main h1 span {
@@ -118,7 +127,7 @@ main h1 span {
 }
 
 .items {
-	width: 80%;
+	width: 75%;
 	margin: auto;
 	flex-direction: column;
 }
@@ -137,6 +146,7 @@ main h1 span {
 .features h2 {
 	color: #FFCA99;
 	font-weight: 400;
+	text-align: center;
 }
 
 .features img {
@@ -158,4 +168,148 @@ footer img {
 	display: inline;
 	height: 5rem;
 	padding: 0.75rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 650px) {
+	.logo {
+		display: none;
+	}
+
+	.social_icons {
+		display: block;
+	}
+
+	.social_icons img {
+		display: inline;
+		height: 1.5rem;
+		margin-right: 0.5rem;
+		margin-top: 1rem;
+	}
+
+	.nav_buttons {
+		display: block;
+	}
+
+	.nav_buttons ul {
+		list-style-type: none;
+		margin-top: 1rem;
+	}
+
+	.nav_buttons ul li {
+		display: inline;
+		padding: 0.75rem 0.75rem;
+	}
+
+	.items {
+		width: 85%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.features {
+		flex-basis: 50%;
+		padding-right: 1.75rem;
+	}
+
+	footer {
+		display: none;
+	}
+}
+
+@media (min-width: 1000px) {
+	.header_logo {
+		display: block;
+	}
+}
+
+@media (min-width: 1200px) {
+	.items {
+		max-width: 960px;
+	}
+
+	.features {
+		flex-basis: 33%;
+		padding-right: 1.75rem;
+	}
+
+	.features img,
+	.features h2 {
+		display: inline;
+	}
+
+	.features img {
+		margin-bottom: 0;
+		height: 1.75em;
+		width: 1.75rem;
+		margin-right: 0.75rem;
+	}
+
+	main h1 {
+		padding-top: 6rem;
+		padding-bottom: 4rem;
+		font-size: 3rem;
+	}
+
+	.firebase_nav {
+		padding: 2rem 3rem;
+	}
+
+	#title {
+		font-size: 1.75rem;
+	}
+
+	#stars {
+		font-size: 1rem;
+	}
+
+	.nav_buttons {
+		font-size: 1.2rem;
+		margin-top: 1.75rem;
+	}
+
+	.button {
+		padding: 2.25rem 2rem;
+	}
+
+	.download_btn {
+		font-size: 1.5rem;
+		padding: 0.5rem 1.75rem;
+	}
+
+	.social_icons {
+		margin-top: 1.75rem;
+	}
+
+	.social_icons img {
+		height: 2rem;
+		margin-left: 2rem;
+	}
+
+	.header_logo {
+		display: block;
+	}
+
+	header {
+		max-width: 960px;
+		justify-content: space-between;
+	}
+
+	header section {
+		flex-basis: 50%;
+	}
+
+	header .download_btn {
+		font-size: 1.75rem;
+	}
+
+	header section h1 {
+		font-size: 5rem;
+	}
+
+	.max-size {
+		max-width: 1200px;
+		margin: auto;
+	}
 }
